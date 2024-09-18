@@ -1,4 +1,4 @@
-package creation.factory_method._01_before;
+package creation.factory._01_before;
 
 public class CarFactory {
 

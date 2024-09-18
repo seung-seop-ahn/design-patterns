@@ -1,4 +1,4 @@
-package creation.factory_method._02_after;
+package creation.factory._02_after;
 
 public class Client {
 

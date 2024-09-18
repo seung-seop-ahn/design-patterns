@@ -1,4 +1,4 @@
-package creation.factory_method._01_before;
+package creation.factory._02_after;
 
 public class Car {
     private String name;
