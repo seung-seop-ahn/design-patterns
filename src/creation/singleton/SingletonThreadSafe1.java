@@ -1,4 +1,4 @@
-package singleton;
+package creation.singleton;
 
 public class SingletonThreadSafe1 {
     private static SingletonThreadSafe1 instance;

@@ -1,4 +1,4 @@
-package singleton;
+package creation.singleton;
 
 // Reflection preventive (Cannot reflectively create enum objects)
 public enum SingletonThreadSafe5 {

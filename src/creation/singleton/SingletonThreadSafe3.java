@@ -1,4 +1,4 @@
-package singleton;
+package creation.singleton;
 
 public class SingletonThreadSafe3 {
     private static volatile SingletonThreadSafe3 instance;

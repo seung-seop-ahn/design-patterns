@@ -1,4 +1,4 @@
-package singleton;
+package creation.singleton;
 
 public class SingletonThreadSafe2 {
     // Eager initialization
