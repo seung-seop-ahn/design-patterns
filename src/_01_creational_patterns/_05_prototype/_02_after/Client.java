@@ -23,5 +23,10 @@ public class Client {
         // Shallow Copy (Java Default Copy)
         // Cloned object references are same
         System.out.println(clone.getRepository() == githubIssue.getRepository()); // true
+
+        // https://modelmapper.org/
+//        ModelMapper modelMapper = new ModelMapper();
+//        GIthubIssueData data = modelMapper.map(githubIssue, GithubIssueData.class);
+//        System.out.println(data);
     }
 }
