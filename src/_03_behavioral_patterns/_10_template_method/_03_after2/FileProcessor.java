@@ -1,10 +1,10 @@
-package _03_behavioral_patterns._10_template_method._02_after;
+package _03_behavioral_patterns._10_template_method._03_after2;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public abstract class FileProcessor {
+public class FileProcessor {
 
     private String path;
 
@@ -12,18 +12,16 @@ public abstract class FileProcessor {
         this.path = path;
     }
 
-    public int process() {
+    public int process(Operator operator) {
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             int result = 0;
             String line = null;
             while ((line = reader.readLine()) != null) {
-                result = this.getResult(result, Integer.parseInt(line));
+                result = operator.getResult(result, Integer.parseInt(line));
             }
             return result;
         } catch (IOException e) {
             throw new IllegalArgumentException(path + "not found.", e);
         }
     }
-
-    protected abstract int getResult(int result, int number);
 }
